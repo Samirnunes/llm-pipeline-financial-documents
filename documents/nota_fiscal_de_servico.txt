@@ -1,0 +1,47 @@
+NOTA FISCAL DE SERVIÇO ELETRÔNICA (NFS-e)
+
+PREFEITURA MUNICIPAL DE SÃO PAULO
+
+Número da NFS-e: 20250603-0001234
+Data e Hora da Emissão: 03/06/2025 14:50:56
+PRESTADOR DE SERVIÇOS
+
+Razão Social: SERVIÇOS DIGITAIS E CONSULTORIA LTDA.
+Nome Fantasia: TECHSOLUTIONS
+CNPJ: 12.345.678/0001-90
+Inscrição Municipal: 987.654.321
+Endereço: Rua da Inovação, 123 - Centro
+Cidade: SÃO PAULO, SP - CEP: 01000-000
+Telefone: (11) 3333-4444
+E-mail: contato@techsolutions.com.br
+TOMADOR DE SERVIÇOS
+
+Razão Social/Nome: EMPRESA MODELO S.A.
+CNPJ/CPF: 98.765.432/0001-21
+Endereço: Av. dos Negócios, 456 - Sala 789
+Cidade: SÃO PAULO, SP - CEP: 02000-000
+Telefone: (11) 5555-6666
+E-mail: financeiro@empresamodelo.com.br
+DETALHES DOS SERVIÇOS
+
+Código do Serviço: 1.01 - Análise e desenvolvimento de sistemas
+Descrição dos Serviços: Prestação de serviços de consultoria em desenvolvimento de software para otimização de processos internos. Inclui análise de requisitos, design de arquitetura e acompanhamento de implementação.
+VALORES
+
+Valor dos Serviços: R$ 5.000,00
+Valor de Deduções: R$ 0,00
+Base de Cálculo: R$ 5.000,00
+Alíquota: 5,00%
+Valor ISS: R$ 250,00
+Valor Líquido: R$ 4.750,00
+DADOS COMPLEMENTARES
+
+Observações: Pagamento via transferência bancária em até 7 dias úteis.
+
+IMPOSTO RETIDO NA FONTE: [ ] SIM [X] NÃO
+
+CÓDIGO DE VERIFICAÇÃO: ABCD-EFGH-IJKL-MNPR
+
+Esta Nota Fiscal de Serviço Eletrônica substitui o Recibo Provisório de Serviços (RPS) de número 12345.
+
+A autenticidade desta NFS-e pode ser verificada no site da Prefeitura Municipal de SÃO PAULO.

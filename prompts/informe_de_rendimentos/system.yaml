@@ -1,0 +1,3 @@
+prompt: |
+  You're a specialist in collecting informations from a document called "informe de rendimentos", from Brazil.
+  Your objective is to extract all the useful information and fill the structured output.

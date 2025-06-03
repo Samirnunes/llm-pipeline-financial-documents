@@ -1,0 +1,40 @@
+INFORME DE RENDIMENTOS
+
+ANO-CALENDÁRIO 2024
+FONTE PAGADORA (EMPRESA/INSTITUIÇÃO QUE PAGOU OS RENDIMENTOS)
+
+Nome Empresarial: EMPRESA MODELO S.A.
+CNPJ: 98.765.432/0001-21
+Endereço: Av. dos Negócios, 456 - Sala 789, São Paulo, SP - CEP: 02000-000
+BENEFICIÁRIO (PESSOA QUE RECEBEU OS RENDIMENTOS)
+
+Nome Completo: JOÃO DA SILVA SAURO
+CPF: 123.456.789-00
+Endereço: Rua das Flores, 789 - Apto 101, São Paulo, SP - CEP: 03000-000
+RENDIMENTOS TRIBUTÁVEIS, DEDUÇÕES E IMPOSTO RETIDO NA FONTE
+Código	Descrição	Valor (R$)
+01	Total dos Rendimentos Recebidos (salários, pró-labore, aposentadoria, pensões, etc.)	72.000,00
+02	Contribuição Previdenciária Oficial (INSS)	7.920,00
+03	Pensão Alimentícia (se houver determinação judicial)	0,00
+04	Outras Deduções (ex: dependentes, se aplicável, por exemplo, R$ 2.275,08 por dependente)	0,00
+05	Imposto de Renda Retido na Fonte (IRRF)	6.500,00
+06	13º Salário	6.000,00
+07	IRRF sobre 13º Salário	300,00
+RENDIMENTOS ISENTOS E NÃO TRIBUTÁVEIS
+Código	Descrição	Valor (R$)
+01	Lucros e Dividendos Recebidos (PJ)	0,00
+02	Indenizações por Rescisão de Contrato de Trabalho e Férias Indenizadas	0,00
+03	Bolsas de Estudo e Pesquisa Caracterizadas como Doação (sem contraprestação de serviço)	0,00
+04	Outros (ex: rendimentos de caderneta de poupança, doações, heranças, etc.)	1.200,00
+INFORMAÇÕES COMPLEMENTARES
+
+Total de Rendimentos Pagos no Ano-Calendário 2024: R$ 72.000,00
+Total de Contribuições Previdenciárias: R$ 7.920,00
+Total de IRRF: R$ 6.500,00
+
+Local e Data: São Paulo, 03 de junho de 2025.
+
+Assinatura do Responsável pela Fonte Pagadora:
+
+ANA PAULA SILVA
+Gerente Financeira

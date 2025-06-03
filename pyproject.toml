@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "llm-pipeline-financial-documents"
+version = "0.1.0"
+description = ""
+authors = ["Samir Nunes da Silva"]
+readme = "README.md"
+packages = [{include = "llm_pipeline_financial_documents", from="src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+litellm = "^1.72.0"
+pydantic = "^2.11.5"
+instructor = "^1.8.3"
+pydantic-settings = "^2.9.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
