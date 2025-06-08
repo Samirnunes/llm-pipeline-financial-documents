@@ -1,5 +1,3 @@
-from datetime import datetime
-
 from pydantic import BaseModel, Field
 
 
@@ -9,7 +7,7 @@ class NotaFiscalDeServico(BaseModel):
         ...,
         description="O número sequencial único da Nota Fiscal de Serviço Eletrônica.",
     )
-    data_hora_emissao: datetime = Field(
+    data_hora_emissao: str = Field(
         ..., description="A data e hora exata em que a NFS-e foi emitida."
     )
     codigo_verificacao: str = Field(
@@ -134,5 +132,3 @@ class NotaFiscalDeServico(BaseModel):
         ...,
         description="Campo para quaisquer observações adicionais relevantes para a nota fiscal, como condições de pagamento.",
     )
-
-
