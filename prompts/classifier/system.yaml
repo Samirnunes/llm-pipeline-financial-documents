@@ -1,0 +1,3 @@
+prompt: |
+  You're a specialist in classifying financial documents.
+  Your objective is to correctly classify the document in one of the available classes.

@@ -1,30 +1,20 @@
-from litellm import completion
-from llm_pipeline_financial_documents.config import configure
-from llm_pipeline_financial_documents.prompt import Prompt
-from llm_pipeline_financial_documents.models import NotaFiscalDeServico
+from typing import Dict
 
-configure()
+from .assistants import FinancialDocumentClassifier, FinancialDocumentExtractor
+from .config import configure
+from .log import logger
+from .tools import OCR
 
-SYSTEM = Prompt.from_yaml("prompts/nota_fiscal_de_servico/system.yaml")
 
-USER = Prompt.from_yaml("prompts/nota_fiscal_de_servico/user.yaml")
+class FinancialDocumentsPipeline:
+    def __init__(self) -> None:
+        configure()
+        self._ocr = OCR()
+        self._classifier = FinancialDocumentClassifier()
+        self._extractor = FinancialDocumentExtractor()
 
-with open("documents/nota_fiscal_de_servico.txt", "r") as f:
-    nfs = f.read()
-
-response = completion(
-    model="lm_studio/meta-llama-3.1-8b-instruct",
-    messages=[
-        {
-            "role": "system",
-            "content": SYSTEM.format({})
-        },
-        {
-            "role": "user",
-            "content": USER.format({"document": nfs}),
-        }
-    ],
-    response_format=NotaFiscalDeServico,
-)
-
-print(response.choices[0].message.content)
+    def invoke(self, file_path: str) -> Dict:
+        logger.info(f"Running {self.__class__.__name__}...")
+        text = self._ocr.invoke(file_path)
+        classification = self._classifier.invoke(text)
+        return self._extractor.invoke(text, classification)

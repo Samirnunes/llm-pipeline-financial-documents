@@ -25,7 +25,9 @@ E-mail: financeiro@empresamodelo.com.br
 DETALHES DOS SERVIÇOS
 
 Código do Serviço: 1.01 - Análise e desenvolvimento de sistemas
-Descrição dos Serviços: Prestação de serviços de consultoria em desenvolvimento de software para otimização de processos internos. Inclui análise de requisitos, design de arquitetura e acompanhamento de implementação.
+Descrição dos Serviços: Prestação de serviços de consultoria em desenvolvimento de software para otimização de processos internos. 
+Inclui análise de requisitos, design de arquitetura e acompanhamento de implementação.
+
 VALORES
 
 Valor dos Serviços: R$ 5.000,00

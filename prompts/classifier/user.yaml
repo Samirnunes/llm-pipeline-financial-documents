@@ -1,0 +1,4 @@
+prompt: |
+  The full document text is shown below:
+
+  {text}

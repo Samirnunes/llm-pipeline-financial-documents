@@ -1,0 +1,4 @@
+prompt: |
+  The {classification} is shown below:
+
+  {text}

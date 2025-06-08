@@ -12,6 +12,9 @@ litellm = "^1.72.0"
 pydantic = "^2.11.5"
 instructor = "^1.8.3"
 pydantic-settings = "^2.9.1"
+pillow = "^11.2.1"
+pytesseract = "^0.3.13"
+pdf2image = "^1.17.0"
 
 
 [build-system]
