@@ -3,6 +3,7 @@ from typing import Dict
 import instructor
 from litellm import completion
 from pydantic import BaseModel
+from tenacity import retry, stop_after_attempt, wait_fixed
 
 from ..log import logger
 from ..models import InformeDeRendimentos, NotaFiscalDeServico
@@ -23,6 +24,7 @@ class FinancialDocumentExtractor:
     def __init__(self) -> None:
         self._client = instructor.from_litellm(completion)
 
+    @retry(wait=wait_fixed(2), stop=stop_after_attempt(5))
     def invoke(self, text: str, classification: str) -> Dict:
         logger.info(f"Running {self.__class__.__name__}...")
 

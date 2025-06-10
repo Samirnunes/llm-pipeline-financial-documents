@@ -1,3 +1,4 @@
+import codecs
 import os
 import tempfile
 
@@ -35,6 +36,10 @@ class OCR:
         try:
             file_extension = os.path.splitext(image_path)[1].lower()
 
+            if file_extension == ".txt":
+                with open(image_path, "r") as f:
+                    return f.read()
+
             if file_extension == ".pdf":
                 logger.info("PDF file detected. Converting to image...")
                 with tempfile.TemporaryDirectory() as temp_dir:
@@ -61,7 +66,10 @@ class OCR:
 
                     text = "\n\n".join(
                         [
-                            pytesseract.image_to_string(img, lang="por")
+                            codecs.decode(
+                                pytesseract.image_to_string(img, lang="por"),
+                                "raw_unicode_escape",
+                            )
                             for img in images_from_path
                         ]
                     )

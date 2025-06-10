@@ -3,6 +3,7 @@ from enum import Enum
 import instructor
 from litellm import completion
 from pydantic import BaseModel, Field
+from tenacity import retry, stop_after_attempt, wait_fixed
 
 from ..log import logger
 from ..prompt import Prompt
@@ -31,6 +32,7 @@ class FinancialDocumentClassifier:
     def __init__(self) -> None:
         self._client = instructor.from_litellm(completion)
 
+    @retry(wait=wait_fixed(2), stop=stop_after_attempt(5))
     def invoke(self, text: str) -> str:
         """
         Invokes the document classifier.
