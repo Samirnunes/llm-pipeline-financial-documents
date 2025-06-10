@@ -59,9 +59,12 @@ class OCR:
                         logger.error("PDF conversion resulted in no images.")
                         return "Error: PDF conversion resulted in no images."
 
-                    img = images_from_path[0]
-
-                    text = pytesseract.image_to_string(img, lang="por")
+                    text = "\n\n".join(
+                        [
+                            pytesseract.image_to_string(img, lang="por")
+                            for img in images_from_path
+                        ]
+                    )
 
             elif file_extension in [".png", ".jpg", ".jpeg", ".bmp", ".tiff"]:
                 logger.info(f"Image file detected: {image_path}")
