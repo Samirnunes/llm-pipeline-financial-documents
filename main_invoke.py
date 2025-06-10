@@ -2,7 +2,7 @@ import yaml  # type: ignore
 
 from llm_pipeline_financial_documents import FinancialDocumentsPipeline
 
-document_name = "informe_de_rendimentos.txt"
+document_name = "informe_de_rendimentos.pdf"
 document_without_extension = document_name.split(".")[0]
 
 pipeline = FinancialDocumentsPipeline()

@@ -37,7 +37,7 @@ class OCR:
             file_extension = os.path.splitext(image_path)[1].lower()
 
             if file_extension == ".txt":
-                with open(image_path, "r") as f:
+                with open(image_path, "r", encoding="utf-8") as f:
                     return f.read()
 
             if file_extension == ".pdf":
@@ -64,15 +64,23 @@ class OCR:
                         logger.error("PDF conversion resulted in no images.")
                         return "Error: PDF conversion resulted in no images."
 
-                    text = "\n\n".join(
-                        [
-                            codecs.decode(
-                                pytesseract.image_to_string(img, lang="por"),
-                                "raw_unicode_escape",
-                            )
-                            for img in images_from_path
-                        ]
-                    )
+                    try:
+                        text = "\n\n".join(
+                            [
+                                codecs.decode(
+                                    pytesseract.image_to_string(img, lang="por"),
+                                    "raw_unicode_escape",
+                                )
+                                for img in images_from_path
+                            ]
+                        )
+                    except Exception:
+                        text = "\n\n".join(
+                            [
+                                pytesseract.image_to_string(img, lang="por")
+                                for img in images_from_path
+                            ]
+                        )
 
             elif file_extension in [".png", ".jpg", ".jpeg", ".bmp", ".tiff"]:
                 logger.info(f"Image file detected: {image_path}")
