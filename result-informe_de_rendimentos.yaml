@@ -1,0 +1,21 @@
+aliquota_iss: 5.0
+cidade_prestador: São Paulo
+cidade_tomador: Rio de Janeiro
+cnpj_ou_cpf_tomador_de_servicos: '12345678910'
+cnpj_prestador_de_servicos: '98765432145'
+codigo_servico: 1.2.3
+codigo_verificacao: ABC123
+data_hora_emissao: '2022-01-01 12:00:00'
+detalhes_dos_servicos: Serviço de consultoria
+endereco_prestador: Rua ABC, 123, Bairro XYZ
+endereco_tomador: Avenida DEF, 456, Bairro MNO
+imposto_retido_na_fonte: true
+inscricao_municipal_prestador: '98765432145'
+nome_fantasia_prestador_de_servicos: Prestador de Serviços Ltda.
+numero: '1234567890'
+razao_social_prestador_de_servicos: Prestador de Serviços Ltda.
+razao_social_tomador_de_servicos: Tomador de Serviços S.A.
+uf_prestador: SP
+uf_tomador: RJ
+valor_deducoes: 1000.0
+valor_liquido: 5000.0
